@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <h3 class="greet">TODO</h3>
+    <div class="container" id="home">
+        <h6 class="heading ">Just do it.</h6>
+        <form action="">
+            <h6>ADD ITEM</h6>
+            <hr>
+            <div class="inputBox">
+              <div class="input">
+                <input value="" id="new-task" class="form-control taskinput " type="text" placeholder="Enter your task">
+                <input type="hidden" id="saveinput">
+              </div>
+                <div class="adddelete">
+                  <button type="submit" class="addbtn"id="add-task">ADD</button>  
+                  <button type="submit" class="savebtn"id="save-task">SAVE</button>  
+                <button type="submit" class="deletebtn" id="deleteall-task">DELETE</button>&nbsp; 
+                </div>
+            </div>
+        </form>
+        <h6 class="myList mt-5">MY TODO LIST</h6>
+        <hr>
+        <ol id="task-list"> 
+          
+        </ol>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+body{
+    background-image: linear-gradient(to right,black , rgb(23, 39, 80));
+    color: white;
+    padding-top: 0 !important;
+}
+
+.greet{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.inputBox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.input{
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.taskinput{
+    padding: 6px;
+    
+}
+.adddelete, .taskadddelete{
+    width: 10%;
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.addbtn, .deletebtn, .editbtn, .savebtn{
+    padding: 0.3rem;
+    background-color: transparent;
+    border: 2px solid rgb(80, 78, 78);
+    border-radius: 5px;
+    color: white;
+    font-size: small;
+}
+.editbtn{
+    float: right;
+}
+
+.addbtn:hover,.deletebtn:hover, .editbtn:hover, .savebtn:hover{
+    border-color: green;
+}
+.container{
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    padding-bottom: 4rem;
+}
+
+
+@media only screen and (max-width:1300px ){
+    .input{
+        width: 80%;
+        
+    }
+    .taskinput{
+        padding: 4px;
+        font-size: smaller;
+        
+    }
+    .adddelete, .taskadddelete{
+        width: 15%;
+       
+    }
+    .addbtn, .deletebtn, .editbtn, .savebtn{
+        font-size: 12px;
+    }
+    .heading{
+        font-size: 50px;
+
+    }
+} 
+@media only screen and (max-width:800px ){
+    .input{
+        width: 75%;
+        
+    }
+    .adddelete, .taskadddelete{
+        width: 22%;
+       
+    }
+    .addbtn, .deletebtn, .editbtn, .savebtn{
+        font-size: 11px;
+    }
+    .heading{
+        font-size: 45px;
+
+    }
+} 
+@media only screen and (max-width:510px ){
+    .input{
+        width: 57%;
+        font-size: 13;        
+    }
+    .taskinput{
+        padding: 2px;        
+    }
+    .adddelete,.taskadddelete{
+        width: 40%;       
+    }
+    .heading{
+        font-size: 40px;
+    }
+    .addbtn, .deletebtn, .editbtn,.savebtn{
+        padding: 0.2rem;
+        font-size: 10px;
+    }
+    .container{
+        padding: 15px;
+        padding-top: 20px !important;
+        }
+} 
+.taskadddelete{
+    float: right;
+}
+.myTasks{
+    padding: 0.7rem;    
+}
+.myTasks:hover{
+    background-color: rgb(24, 24, 66);
+}
+#task-list{
+    padding-right: 0.6rem;
+}
+.savebtn{
+    display: none;
+}
+
